@@ -1,47 +1,45 @@
-# Pepbridge Discord Bot Landing Page
+# Pepbridge - Cross-Platform Message Bridge
 
-This is a single-page website for the Pepbridge Discord bot, which provides cross-platform "bridge" functionality to relay messages between Discord and other services like Telegram and Revolt.
+Pepbridge is a powerful Discord bot that bridges messages between multiple chat platforms, enabling seamless communication across Discord, Telegram, and Revolt.
+
+## Website Content Overview
+
+### Main Features
+
+- **Cross-Platform Messaging**: Connect your Discord, Telegram, and Revolt communities into a unified chat experience
+- **Seamless Bridging**: Messages sent on one platform appear instantly on all connected platforms
+- **Reply Functionality**: Cross-platform replies work correctly, maintaining conversation context
+- **Emoji Support**: Full emoji support across all platforms
+
+### Command Reference
+
+The website includes detailed explanations of the bot's primary commands:
+
+1. **Setup Commands**: Instructions for setting up connections between platforms
+2. **Configuration Options**: Customization settings for how messages are displayed across platforms
+3. **Management Tools**: Commands for moderators to manage the bridge functionality
+
+### Privacy & Data Information
+
+- **Limited Data Collection**: Pepbridge only stores essential data (Channel ID, Server ID, Webhook ID, Webhook Token)
+- **Message ID Caching**: Temporarily caches message IDs for 3 weeks to enable cross-platform reply functionality
+- **No Content Storage**: Message content is forwarded between platforms but not stored
+
+### Terms of Service
+
+The website includes comprehensive terms of service covering:
+- Acceptable use policies
+- User responsibilities
+- Service limitations
+- Termination conditions
+
+## About Pepbridge
+
+Pepbridge was developed to solve the challenge of fragmented communities across multiple chat platforms. Rather than forcing users to standardize on a single platform, Pepbridge allows each community to use their preferred platform while maintaining seamless communication with others.
+
+The service is designed with privacy and efficiency in mind, storing only the minimum data necessary for functionality while ensuring reliable message delivery between platforms.
 
 ## Files Included
 
 - `index.html` - The main HTML structure of the landing page
-- `styles.css` - Styling and layout for the website
-- `script.js` - Interactive elements like smooth scrolling
-- `bridge-illustration.svg` - Main hero illustration
-- `workflow-illustration.svg` - How-it-works process illustration
-
-## Features
-
-- Modern, responsive design that works on all devices
-- Clear sections explaining the bot's features and functionality
-- Terms of Service and Privacy Policy sections
-- Smooth scrolling and interactive elements
-- Animated SVG illustrations
-
-## To Deploy This Website
-
-1. Upload all files to your web hosting server
-2. Make sure to update the "Add to Discord" button link to point to your Discord bot's authorization URL
-3. Update any contact information in the footer if needed
-
-## To Run Locally
-
-Simply open the `index.html` file in any modern browser to preview the website.
-
-## Customization
-
-- To change the primary color theme, edit the CSS variables in the `:root` section of `styles.css`
-- Update the illustrations by editing the SVG files or replacing them with your own
-- Modify the content in `index.html` to adjust text and sections as needed
-
-## Browser Support
-
-This website is designed to work on all modern browsers including:
-- Chrome
-- Firefox
-- Safari
-- Edge
-
-## License
-
-The code for this website is available for your use. Feel free to modify it to fit your needs. 
+- `styles.css`
