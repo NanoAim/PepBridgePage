@@ -39,7 +39,3 @@ Pepbridge was developed to solve the challenge of fragmented communities across 
 
 The service is designed with privacy and efficiency in mind, storing only the minimum data necessary for functionality while ensuring reliable message delivery between platforms.
 
-## Files Included
-
-- `index.html` - The main HTML structure of the landing page
-- `styles.css`
