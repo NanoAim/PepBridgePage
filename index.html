@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepbridge - Cross-Platform Discord Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Pepbridge</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#commands">Commands</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#terms">Terms</a>
+                <a href="#privacy">Privacy</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connect Your Communities</h1>
+            <h2>Bridge Messages Between Platforms</h2>
+            <p>Pepbridge seamlessly bridge messages across Discord, Telegram, and Revolt. Keep your community connected, no matter where they chat.</p>
+            <div class="cta-buttons">
+                <a href="#features" class="btn secondary-btn">Learn More</a>
+            </div>
+            <div class="hero-illustration">
+                <img src="bridge-illustration.svg" alt="Bridge connecting different platforms">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-exchange-alt"></i></div>
+                <h3>Cross-Platform Messaging</h3>
+                <p>Send and receive messages between Discord and other messaging platforms in real-time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-paperclip"></i></div>
+                <h3>Attachment Support</h3>
+                <p>Share images, videos, and other files across platforms without any hassle.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-user-friends"></i></div>
+                <h3>Community Unification</h3>
+                <p>Keep your community connected regardless of their preferred chat platform.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Secure & Private</h3>
+                <p>Your messages are never stored and only used for immediate forwarding.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="commands">
+        <h2>Commands</h2>
+        <div class="commands-container">
+            <div class="command-card">
+                <div class="command-name">/connect</div>
+                <div class="command-description">
+                    <p>Connect your Discord channel to Revolt and Telegram simultaneously. You need to provide the IDs for both platforms to create the bridge.</p>
+                    <div class="command-example">
+                        <code>/connect &lt;revolt_channel_id&gt; &lt;telegram_channel_id&gt;</code>
+                    </div>
+                </div>
+            </div>
+            <div class="command-card">
+                <div class="command-name">/disconnect</div>
+                <div class="command-description">
+                    <p>Disconnect the current Discord channel from all connected platforms. Execute this command in the channel you want to disconnect.</p>
+                    <div class="command-example">
+                        <code>/disconnect</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Invite Pepbridge</h3>
+                <p>Add the Pepbridge bot to your Discord server.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Configure Bridges</h3>
+                <p>Set up which channels to connect with other platforms.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Start Chatting</h3>
+                <p>Messages flow automatically between platforms in real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="terms" class="terms">
+        <h2>Terms of Service</h2>
+        <div class="terms-container">
+            <div class="terms-group">
+                <h3>Legal and Ethical</h3>
+                <p>All operations taking place on Pepbridge are subject to Swiss Law. Any violations of law will lead to direct termination of the service.</p>
+                <p>Pepbridge reserves the right to terminate services if they violate general accepted ethical standards.</p>
+                <p>Customers who abuse or who match the pattern of behaviour of other abusers of our service platform will be suspended or terminated unless clarified with Pepbridge in a written form.</p>
+            </div>
+            <div class="terms-group">
+                <h3>Network Fair Use Policy</h3>
+                <p>Network can be used under fair use. Pepbridge reserves the right to suspend the bridge for the case of long term excessive use.</p>
+            </div>
+            <div class="terms-group">
+                <h3>Service Termination</h3>
+                <p>Pepbridge reserves the right to terminate customer instances as defined in Legal and Ethical clause of Terms of Service.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy" class="privacy">
+        <h2>Privacy Policy</h2>
+        <div class="privacy-container">
+            <div class="privacy-group">
+                <h3>Sensitive Information We Have Access To</h3>
+                <p>To redirect Pepbridge conversation messages from the Discord threads back to Pepbridge, the application has access to read the content of messages inside the server channels where the application has access. We don't store message content data on our servers or any third-party service.</p>
+            </div>
+            <div class="privacy-group">
+                <h3>Information We Collect</h3>
+                <p>We store your account data necessary for the service to function: Channel ID, Server ID, Webhook ID, Webhook Token.</p>
+                <p>Additionally, we temporarily cache message IDs to enable cross-platform reply functionality. This allows messages and replies to be properly mapped between different platforms, ensuring conversations remain threaded and coherent across Discord, Telegram, and Revolt. These cached message IDs are automatically pruned after 3 weeks, as they're only needed for reply functionality.</p>
+            </div>
+            <div class="privacy-group">
+                <h3>How We Use Your Data</h3>
+                <p>Service Provision: we use collected data to provide and improve the Bot's features and services.</p>
+            </div>
+            <div class="privacy-group">
+                <h3>Data Sharing</h3>
+                <p>We do not cache, log or otherwise store your message content. Only message IDs are temporarily cached for cross-platform reply functionality. After our software forwards information between platforms, the message content is permanently deleted from our systems.</p>
+            </div>
+            <div class="privacy-group">
+                <h3>Data Security</h3>
+                <p>We do not share any of your personal information to any third party or use it in any way other than to provide you this service.</p>
+            </div>
+            <div class="privacy-group">
+                <h3>Changes to This Privacy Policy</h3>
+                <p>We reserve the right to update this Privacy Policy to reflect changes in our practices. We will notify users of any material changes.</p>
+            </div>
+            <p class="privacy-agreement">By using the Pepbridge Bot, you agree to the terms outlined in this Privacy Policy.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Pepbridge</h2>
+                <p>Connect your communities across platforms.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Product</h3>
+                    <a href="#features">Features</a>
+                    <a href="#commands">Commands</a>
+                    <a href="#how-it-works">How It Works</a>
+                </div>
+                <div class="link-group">
+                    <h3>Legal</h3>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+                <div class="link-group">
+                    <h3>Contact</h3>
+                    <a href="#">Support</a>
+                    <a href="#">Email</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Pepbridge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

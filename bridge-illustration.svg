@@ -1,0 +1,56 @@
+<svg width="750" height="500" viewBox="0 0 750 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="750" height="500" fill="#F8FAFF"/>
+  
+  <!-- Discord platform (left) - Moved closer to center -->
+  <rect x="150" y="187.5" width="150" height="125" rx="12.5" fill="#5865F2"/>
+  <rect x="175" y="212.5" width="100" height="18.75" rx="6.25" fill="white" fill-opacity="0.8"/>
+  <rect x="175" y="243.75" width="100" height="12.5" rx="6.25" fill="white" fill-opacity="0.5"/>
+  <rect x="175" y="268.75" width="75" height="12.5" rx="6.25" fill="white" fill-opacity="0.5"/>
+  
+  <!-- Telegram platform (right) - Moved closer to center -->
+  <rect x="450" y="187.5" width="150" height="125" rx="12.5" fill="#29B6F6"/>
+  <rect x="475" y="212.5" width="100" height="18.75" rx="6.25" fill="white" fill-opacity="0.8"/>
+  <rect x="475" y="243.75" width="100" height="12.5" rx="6.25" fill="white" fill-opacity="0.5"/>
+  <rect x="475" y="268.75" width="75" height="12.5" rx="6.25" fill="white" fill-opacity="0.5"/>
+  <path d="M500 131.25 L518.75 150 L543.75 125" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Revolt platform (top) - Moved higher -->
+  <rect x="300" y="37.5" width="150" height="125" rx="12.5" fill="#FF4654"/>
+  <rect x="325" y="62.5" width="100" height="18.75" rx="6.25" fill="white" fill-opacity="0.8"/>
+  <rect x="325" y="93.75" width="100" height="12.5" rx="6.25" fill="white" fill-opacity="0.5"/>
+  <rect x="325" y="118.75" width="75" height="12.5" rx="6.25" fill="white" fill-opacity="0.5"/>
+  <path d="M362.5 12.5 L375 25 L387.5 12.5" stroke="white" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Bridge lines - Modified to create symmetrical connections with shorter distances -->
+  <!-- Left to right line (Discord to center) - Discord color -->
+  <path d="M300 243.75 L375 243.75" stroke="#5865F2" stroke-width="6.25" stroke-linecap="round" stroke-dasharray="12.5 6.25"/>
+  
+  <!-- Right to left line (Telegram to center) - Telegram color -->
+  <path d="M450 243.75 L375 243.75" stroke="#29B6F6" stroke-width="6.25" stroke-linecap="round" stroke-dasharray="12.5 6.25"/>
+  
+  <!-- Top to bottom line (Revolt to center) - Revolt color - Now starts from bottom of platform -->
+  <path d="M375 162.5 L375 243.75" stroke="#FF4654" stroke-width="6.25" stroke-linecap="round" stroke-dasharray="12.5 6.25"/>
+  
+  <!-- Message bubbles in transit - adjusted for straight lines -->
+  <circle cx="337.5" cy="243.75" r="10" fill="#5865F2" opacity="0.8">
+    <animate attributeName="cx" from="300" to="362.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="412.5" cy="243.75" r="10" fill="#29B6F6" opacity="0.8">
+    <animate attributeName="cx" from="450" to="387.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="375" cy="200" r="10" fill="#FF4654" opacity="0.8">
+    <animate attributeName="cy" from="162.5" to="237.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Central hub - repositioned to the intersection of the T -->
+  <circle cx="375" cy="243.75" r="25" fill="white" stroke="#5865F2" stroke-width="3.75"/>
+  <path d="M362.5 243.75 L387.5 243.75 M375 231.25 L375 256.25" stroke="#5865F2" stroke-width="3.75"/>
+  
+  <!-- Labels -->
+  <text x="225" y="337.5" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#444" text-anchor="middle">Discord</text>
+  <text x="525" y="337.5" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#444" text-anchor="middle">Telegram</text>
+  <text x="375" y="25" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#444" text-anchor="middle">Revolt</text>
+</svg> 
